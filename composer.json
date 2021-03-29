@@ -1,0 +1,16 @@
+{
+    "name": "jean/chat-php",
+    "authors": [
+        {
+            "name": "jean13011",
+            "email": "jean-13011@hotmail.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Router\\": "routes/",
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
