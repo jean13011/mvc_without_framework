@@ -44,7 +44,7 @@ class Route
     public function execute ()
     {
         $params = explode('@', $this->action);
-        $controller = new $params[0](new DBConnection("myapp", "localhost:3306", "root", "Jean100498753."));
+        $controller = new $params[0](new DBConnection(DB_NAME, DB_HOST, DB_USER, DB_PASS));
         $method = $params[1];
 
         return isset($this->matches[1]) ? $controller->$method($this->matches[1]) : $controller->$method();
